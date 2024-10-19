@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,27 +17,50 @@
         <div class="container text-center">
             <div class="row row-cols-2 p-2 m-2 bg-success-subtle">
                 <div class="col">
+                    <img src="images/opa.webp" class="img-thumbnail" alt="asistente persona libre">
+                </div>
+                <div class="col">
                     <div class="row row-cols-1">
                         <div class="col d-grid gap-2 p-2">
-                            <button type="button" class="btn btn-success btn-lg">
-                                <img src="icons/mic.svg">
-                                Hablame
+                            <button type="button" class="btn btn-success btn-lg" onclick="hola()" >
+                                <img src="icons/person-badge.svg">
+                                Hola
+                            </button>
+                            <button type="button" class="btn btn-success btn-lg" onclick="horaActual()" >
+                                <img src="icons/clock.svg">
+                                Hora
+                            </button>
+                            <button type="button" class="btn btn-success btn-lg" onclick="fechaActual()">
+                                <img src="icons/calendar-day.svg">
+                                Fecha
+                            </button>
+                            <button type="button" class="btn btn-success btn-lg" onclick="">
+                                <img src="icons/cloud-sun.svg">
+                                Clima
+                            </button>
+                            <button type="button" class="btn btn-success btn-lg" onclick="">
+                                <img src="icons/globe-americas.svg">
+                                Ubicación
+                            </button>
+                            <button type="button" class="btn btn-success btn-lg" onclick="">
+                                <img src="icons/gear.svg">
+                                Configuración
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="images/opa.webp" class="img-thumbnail" alt="asistente persona libre">
-                </div>
             </div>
         </div>
         <p class="text-success text-center p-2 m-2 bg-secondary-subtle">
-            Saluda a OPA, o pedí el estado del tiempo, la fecha, que estudiar, o que te hable por hablar
+            Saluda a OPA, o pedí el estado del tiempo, la fecha, que estudiar, o que te hable por hablar<br>
+            En PC se recomienda usar Chrome, en Mobile Edge
         </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
